@@ -2,8 +2,13 @@ import express, { Request, Response } from 'express';
 import firebase_admin from 'firebase-admin';
 import dotenv from 'dotenv';
 import albumRoutes from "./src/routes/albumRoutes";
+import connectDB from "./src/config/db";
 
+// Loading env vars
 dotenv.config();
+
+// Connect Database
+connectDB();
 
 // Initialize Firebase
 firebase_admin.initializeApp({
