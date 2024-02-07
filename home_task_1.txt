@@ -1,0 +1,17 @@
+Typescript Fullstack Home Task sample
+Simple Album site
+Login: frontend simple form, backend node + google firebase
+Main page: Scroll lazyloading album cards (card: album picture + album name)
+backend: REST api for create, delete, get, update for albums
+Simple album detail page: same for the create, update, uploading album picture, input box with name
+important:
+auth check: firebase
+image upload: cloudinary
+Rest api: with swagger UI interface
+Auth info and Album cards store: react redux(tookit UI)
+database: Atalas mongo cloud
+Deployment: Heroku
+coding format important:
+Integrate prettier, es, tslining
+Integrate at least 1 unit test
+Create github repository and invite me, I will review your code.
