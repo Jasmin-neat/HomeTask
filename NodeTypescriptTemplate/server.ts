@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import firebase_admin from 'firebase-admin';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import albumRoutes from "./src/routes/albumRoutes";
 import connectDB from "./src/config/db";
 
@@ -23,6 +24,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middlewares
+app.use(cors());
 app.use(express.json());
 app.use("/api/albums", albumRoutes);
 

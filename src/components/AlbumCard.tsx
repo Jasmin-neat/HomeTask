@@ -2,13 +2,13 @@ import React from 'react';
 
 interface AlbumCardProps {
     album: {
-        image: string;
+        picture: string;
         name: string;
     };
 }
 const AlbumCard: React.FC<AlbumCardProps> = ({ album }) => (
     <div>
-        <img src={album.image} alt={album.name} />
+        <img src={album.picture} alt={album.name} />
         <h2>{album.name}</h2>
     </div>
 );
